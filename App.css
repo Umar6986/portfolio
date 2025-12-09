@@ -1,0 +1,37 @@
+/* App-specific styles */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding-top: 80px; /* Account for fixed header */
+}
+
+/* Removed dark mode toggle button positioning */
+/* .dark-mode-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+} */
+
+/* Dark mode styles */
+.App.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  main {
+    padding-top: 70px;
+  }
+  
+  /* .dark-mode-toggle {
+    bottom: 15px;
+    right: 15px;
+  } */
+}
